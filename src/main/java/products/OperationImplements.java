@@ -11,6 +11,7 @@ public class OperationImplements implements Operation{
   public void addItemToStorage(Product product, int amount) {
     if(resultList.contains(product)) {
       System.out.println("Jest już na liście");
+      product.getAmount();
       product.setAmount(product.getAmount()+amount);
     }else{
       resultList.add(product);
