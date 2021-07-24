@@ -10,7 +10,7 @@ import javax.persistence.Column;
 @ToString
 @EqualsAndHashCode
 @Builder
-public abstract class Product {
+public class Product {
 
   private String name;
   private double price;

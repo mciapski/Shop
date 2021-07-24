@@ -12,7 +12,7 @@ public class OperationImplements implements Operation{
     if(resultList.contains(product)) {
       System.out.println("Jest już na liście");
       product.setAmount(product.getAmount()+amount);
-    }else {
+    }else{
       resultList.add(product);
     }
 
