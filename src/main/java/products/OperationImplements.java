@@ -30,6 +30,6 @@ public class OperationImplements implements Operation{
 
   @Override
   public void showAllProducts() {
-
+    System.out.println(resultList);
   }
 }
