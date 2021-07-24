@@ -1,6 +1,7 @@
 package products;
 
 public interface Operation {
-  void createProduct();
-  void addToList();
+  void addItemToStorage(Product product, int amount);
+  void removeItemFromStorage(Product product, int amount);
+  void showAllProducts();
 }

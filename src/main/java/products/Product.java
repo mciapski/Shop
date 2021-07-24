@@ -16,5 +16,7 @@ public abstract class Product {
   private double price;
   private int id_product;
   private double weight;
+  private int amount;
+  private Categories categories;
 
 }
