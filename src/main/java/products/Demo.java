@@ -5,18 +5,14 @@ public class Demo {
 
 
     OperationImplements truskawa = new OperationImplements();
-    Product product = new Product.ProductBuilder()
-        .name("Truskawka")
-        .id_product(1)
-        .price(5)
-        .amount(1)
-        .weight(1)
-        .categories(Categories.Fruit)
-        .build();
+    Product product = truskawa.createProduct();
+    //   truskawa.addItemToStorage(truskawa.createProduct(), 5);
 
-    truskawa.addItemToStorage(product,1);
-    truskawa.addItemToStorage(product,1);
-
+//  truskawa.addItemToStorage(truskawa.createProduct(), 1);
+//  truskawa.addItemToStorage(truskawa.createProduct(), 1);
+//  truskawa.removeItemFromStorage(truskawa.createProduct());
+    truskawa.addItemToStorage(product);
+    //System.out.println(truskawa.listOfFruits);
     truskawa.showAllProducts();
   }
 }
